@@ -67,3 +67,5 @@ for i, msg in enumerate(st.session_state.history):
         with st.chat_message("assistant"):
             st.markdown(msg["content"])   # <-- markdown makes bold, bullet points look good
 # ---------------- END STREAMLIT UI ----------------
+
+#to run: streamlit run travel_chatbot.py
