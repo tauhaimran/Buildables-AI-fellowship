@@ -3,3 +3,7 @@
 # [GitHub](https://github.com/tauhaimran)
 # [Portfolio](https://tauhaimran.github.io/)  
 
+from flask import Flask , request , jsonify
+
+appp = Flask(__name__)
+todos = [{"id": 1, "task": "Buy groceries"}]
