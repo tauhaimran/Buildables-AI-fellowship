@@ -1,0 +1,35 @@
+How to run (local dev)
+
+>> Backend
+
+"
+cd Buildables-AI-fellowship/anato_backend
+"
+
+Copy .env.example to .env and set GROQ_API_KEY.
+
+Install deps:
+"
+python -m venv venv && source venv/bin/activate   # or use Powershell on Windows ( OPTIONAL STEP )
+pip install -r requirements.txt
+"
+
+Run backend:
+"
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
+"
+
+Frontend
+
+In new terminal:
+"
+cd Buildables-AI-fellowship/anato_frontend
+python -m venv venv && source venv/bin/activate
+pip install -r requirements.txt
+"
+Run Frontend:
+"
+streamlit run app.py
+"
+
+Open the Streamlit UI (usually at http://localhost:8501) and ask the bot questions.
